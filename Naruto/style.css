@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&display=swap');
+
+body {
+    background-image: url("/Naruto/images/bg_animegallery_pc.webp");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: large;
+    
+    font-style: normal;
+}
+
+
+
+section{
+    position: relative;
+    display: flex;
+    margin-top: 136px;
+    padding: 10px;
+    justify-content: center;
+    z-index: 10;
+}
+
+.anime-gallery-container {
+    width: 73%;
+    backdrop-filter: blur(1px);
+    background-color: rgba(0,  0, 0, 0.7);
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0px;
+}
+.anime-gallery-heading {
+    background-color: black;
+    font-weight: normal;
+    font-size: 45px;
+    font-family: 'Fjalla One', sans-serif;
+    color: white;
+    justify-content: center;
+    width: 90%;
+    padding: 10px;
+}
+h1 {
+    margin: 0;
+}
+.anime-gallery-heading h1 {
+    text-orientation: sideways;
+}
+
+.anime-gallery-description {
+    color: white;
+    font-size: 25px;
+    padding: 0 20px;
+}
+
+.anime-gallery {
+    width: 100%;
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px;
+    margin: 0;
+    gap: 20px;
+    font-weight: 400;
+}
+
+.anime-image {
+    color: white;
+    width: 200px;
+}
+
+.anime-image:hover {
+    opacity: 0.7;
+}
+
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        background-position: top right;
+    }
+
+    section {
+        margin-top: 100px;
+        padding: 5px;
+    }
+
+    .anime-gallery-container {
+        width: 90%;
+        padding: 20px 0px;
+    }
+
+    .anime-gallery-heading {
+        font-size: 25px;
+        width: 85%;
+        padding: 5px;
+    }
+
+    .anime-gallery-description {
+        font-size: 18px;
+        padding: 0 10px;
+    }
+
+    .anime-gallery {
+        gap: 4px;
+    }
+
+    .anime-image {
+        width: 120px;
+        font-size: small;
+    }
+}
