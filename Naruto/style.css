@@ -12,9 +12,109 @@ body {
     box-sizing: border-box;
     font-family: "Bebas Neue", sans-serif;
     font-size: large;
-    
     font-style: normal;
 }
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+   
+}
+
+.nav-logo {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+}
+
+
+header img {
+    width: 150px;
+    margin: 20px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav-nav {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+    background-color: aliceblue;
+}
+
+.header-container button {
+    padding: 20px;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Bebas Neue' , 'sans-serif';
+    background-color: rgb(0, 0, 0);
+    margin: 10px;
+}
+
+.nav-button{
+    position: relative;
+    z-index: 20;
+    right: -80%;
+}
+
+.nav-button button {
+    padding: 25px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.nav-search {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    right: -100%;
+    z-index: 10;
+    width: 80%;
+    height: 700px;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-bottom-left-radius: 100%;
+    transition: all 0.5s ease-in-out;
+    z-index: 30;
+}
+
+.nav-search.active {
+    right: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.search {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.nav-info {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-info a {
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    margin: 20px;
+}
+
+
 
 
 
@@ -36,7 +136,8 @@ section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 40px 0px;
+    padding: 40px 0px 0px 0px;
+    overflow: hidden;
 }
 .anime-gallery-heading {
     background-color: black;
@@ -80,10 +181,11 @@ h1 {
 
 .anime-image:hover {
     opacity: 0.7;
+    cursor: pointer;
 }
 
 
-img {
+.anime-image img {
     width: 100%;
     height: auto;
     display: block;
@@ -91,11 +193,74 @@ img {
     padding-top: 60px;
 }
 
+.gallery-link {
+    width: 100%;
+    height: 200px;
+    background-color: rgb(239, 136, 57);
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+.link-chara {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.link-chara img {
+    position: relative;
+    z-index: 10;
+    width: 400px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.btn-link {
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+    padding: 5px;
+}
+
 @media (max-width: 768px) {
 
     body {
         background-position: top right;
     }
+
+
+    header img {
+    width: 100px;
+    margin: 20px;
+    }
+
+    .header-container button {
+    padding: 20px;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Bebas Neue' , 'sans-serif';
+    background-color: rgb(0, 0, 0);
+    }
+
+    .nav-button{
+    position: relative;
+    z-index: 20;
+    right: -67%;
+   }
 
     section {
         margin-top: 100px;
