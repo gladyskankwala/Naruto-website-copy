@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&display=swap');
 
 body {
-    background-image: url("/Naruto/images/bg_animegallery_pc.webp");
+    background-image: url("	https://naruto-official.com/special/anime_gallery/bg_animegallery_sp.webp");
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -20,11 +20,10 @@ body {
 header {
     position: fixed;
     top: 0;
+    height: 100px;
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 100;
+    z-index: 30;
    
 }
 
@@ -92,6 +91,7 @@ header img {
 .nav-search.active {
     top: 0;
     right: 0;
+    scale: 1;
     transition: all 0.5s ease-in-out;
 }
 
@@ -352,9 +352,6 @@ footer {
 }
 
 
-
-
-
 @media (max-width: 768px) {
 
     body {
@@ -378,7 +375,7 @@ footer {
     .nav-button{
     position: relative;
     z-index: 20;
-    right: -50%;
+    right: -53%;
    }
 
    .nav-info {
